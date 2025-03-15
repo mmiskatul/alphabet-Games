@@ -77,23 +77,24 @@
                         <button class="btn w-42 h-14  rounded-full bg-[#894189] px-8 py-4 text-white">
                             Life
                             <img src="images/Group 23.svg" alt="">
-                            <span>1</span>
+                            <span id="current-life">5</span>
                           </button>
                           <button class="btn w-42 h-14  rounded-full bg-[#360490] px-8 py-4 text-white">
                             Score
                             <img src="images/monetization_on.svg" alt="">
-                            2
+                            <span id="current-score"> 0 </span>
                           </button>
                       </div>
                 </div>
         </section>
         <!-- Score Screen -->
-        <section class="Score flex flex-col justify-center items-center min-h-screen hidden">
+        <section id="Score-page" class=" flex flex-col justify-center items-center min-h-screen hidden">
             <div class="w-96 h-70 flex flex-col justify-center items-center gap-5 bg-[#FFFFFF33] px-11 py-12 rounded-2xl shadow" >
                 <h1 class="text-6xl text-white">
-                    <span class="font-extrabold">Score :<span class="font-semibold">14</span> </span>
+                    <p class="text-4xl">Game over!!</p>
+                    <span class="font-extrabold">Score :<span id="Score-board" class="font-semibold"> 14</span> </span>
                 </h1>
-                <button class="btn text-black bg-white  px-8 py-4 ">Play Again</button>
+                <button onclick="play()" class="btn text-black bg-white  px-8 py-4 ">Play Again</button>
                 <p class="text-white">Practice will make you a Pro</p>
             </div>
         </section>
