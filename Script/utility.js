@@ -15,3 +15,16 @@ function getRandomAlphabet(){
 function setbackgroundColorById(ElementId) {
     document.getElementById(ElementId).classList.add('bg-orange-400');
 }
+function removebackgroundcolorbyID(ElementId){
+    document.getElementById(ElementId).classList.remove('bg-orange-400');
+}
+function update(ElementId){
+    const currentvalue=document.getElementById(ElementId);
+        const valuetext=currentvalue.innerText;
+        const value =parseInt(valuetext);
+        return value;
+}
+function setvalue(ElementID,value){
+    const Element= document.getElementById(ElementID);
+    Element.innerText =value;
+}
